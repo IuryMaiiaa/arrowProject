@@ -1,0 +1,1574 @@
+fileFormatVersion: 2
+guid: 3a758aff5f3ad49419de524bede65650
+timeCreated: 1437147922
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: arrow_0
+    21300002: arrow_1
+    21300004: arrow_2
+    21300006: arrow_3
+    21300008: arrow_4
+    21300010: arrow_5
+    21300012: arrow_6
+    21300014: arrow_7
+    21300016: arrow_9
+    21300018: arrow_10
+    21300020: arrow_11
+    21300022: arrow_12
+    21300024: arrow_13
+    21300026: arrow_14
+    21300028: arrow_15
+    21300030: arrow_16
+    21300032: arrow_17
+    21300034: arrow_18
+    21300036: arrow_19
+    21300038: arrow_20
+    21300040: arrow_21
+    21300042: arrow_22
+    21300044: arrow_23
+    21300046: arrow_24
+    21300048: arrow_25
+    21300050: arrow_26
+    21300052: arrow_27
+    21300054: arrow_28
+    21300056: arrow_29
+    21300058: arrow_30
+    21300060: arrow_31
+    21300062: arrow_32
+    21300064: arrow_33
+    21300066: arrow_34
+    21300068: arrow_35
+    21300070: arrow_36
+    21300072: arrow_37
+    21300074: arrow_38
+    21300076: arrow_39
+    21300078: arrow_40
+    21300080: arrow_41
+    21300082: arrow_42
+    21300084: arrow_43
+    21300086: arrow_44
+    21300088: arrow_45
+    21300090: arrow_46
+    21300092: arrow_47
+    21300094: arrow_48
+    21300096: arrow_49
+    21300098: arrow_50
+    21300100: arrow_51
+    21300102: arrow_52
+    21300104: arrow_53
+    21300106: arrow_54
+    21300108: arrow_55
+    21300110: arrow_56
+    21300112: arrow_57
+    21300114: arrow_58
+    21300116: arrow_59
+    21300118: arrow_60
+    21300120: arrow_61
+    21300122: arrow_62
+    21300124: arrow_63
+    21300126: arrow_64
+    21300128: arrow_65
+    21300130: arrow_67
+    21300132: arrow_68
+    21300134: arrow_70
+    21300136: arrow_71
+    21300138: arrow_72
+    21300140: arrow_74
+    21300142: arrow_75
+    21300144: arrow_76
+    21300146: arrow_77
+    21300148: arrow_78
+    21300150: arrow_79
+    21300152: arrow_80
+    21300154: arrow_81
+    21300156: arrow_82
+    21300158: arrow_83
+    21300160: arrow_84
+    21300162: arrow_85
+    21300164: arrow_86
+    21300166: arrow_87
+    21300168: arrow_88
+    21300170: arrow_89
+    21300172: arrow_90
+    21300174: arrow_91
+    21300176: arrow_92
+    21300178: arrow_93
+    21300180: arrow_94
+    21300182: arrow_95
+    21300184: arrow_96
+    21300186: arrow_97
+    21300188: arrow_98
+    21300190: arrow_99
+    21300192: arrow_100
+    21300194: arrow_101
+    21300196: arrow_102
+    21300198: arrow_103
+    21300200: arrow_104
+    21300202: arrow_105
+    21300204: arrow_106
+    21300206: arrow_107
+    21300208: arrow_108
+    21300210: arrow_109
+    21300212: arrow_110
+    21300214: arrow_111
+    21300216: arrow_112
+    21300218: arrow_113
+    21300220: arrow_114
+    21300222: arrow_115
+    21300224: arrow_116
+    21300226: arrow_117
+    21300228: arrow_118
+    21300230: arrow_119
+    21300232: arrow_120
+    21300234: arrow_121
+    21300236: arrow_122
+    21300238: arrow_123
+    21300240: arrow_124
+    21300242: arrow_125
+    21300244: arrow_126
+    21300246: arrow_127
+    21300248: arrow_128
+    21300250: arrow_129
+    21300252: arrow_130
+    21300254: arrow_131
+    21300256: arrow_132
+    21300258: arrow_133
+    21300260: arrow_134
+    21300262: arrow_135
+    21300264: arrow_136
+    21300266: arrow_137
+    21300268: arrow_138
+    21300270: arrow_139
+    21300272: arrow_140
+    21300274: arrow_141
+    21300276: arrow_142
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: arrow_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 929
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 929
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 929
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 929
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_4
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 926
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_5
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 921
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_6
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 924
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_7
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 924
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 871
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_10
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 871
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 871
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 871
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 871
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_14
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 871
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_15
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 871
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_16
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 871
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_17
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 871
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 811
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_19
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 811
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_20
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 811
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_21
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 811
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_22
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 811
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_23
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 830
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_24
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 811
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_25
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 747
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 746
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_27
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 747
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_28
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 747
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_29
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 747
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_30
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 752
+        width: 12
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_31
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 761
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_32
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 761
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_33
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 765
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_34
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 758
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_35
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 747
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_36
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 685
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_37
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 685
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_38
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 685
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_39
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 684
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_40
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 684
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_41
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 684
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_42
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 655
+        width: 144
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_43
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 598
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_44
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 598
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_45
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 598
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_46
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 598
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_47
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 598
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_48
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 598
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_49
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 613
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_50
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 612
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_51
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 613
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_52
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 612
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_53
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 614
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_54
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 611
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_55
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 612
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_56
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 613
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_57
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 571
+        width: 144
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_58
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 513
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_59
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 513
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_60
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 513
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_61
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 513
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_62
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 513
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_63
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 513
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_64
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 531
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_65
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 529
+        width: 35
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_67
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 532
+        width: 28
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_68
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 529
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_70
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 507
+        width: 13
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_71
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 507
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_72
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 507
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_74
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 484
+        width: 144
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_75
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 422
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_76
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 422
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_77
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 422
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_78
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 422
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_79
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 422
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_80
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 422
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_81
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 436
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_83
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 436
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_84
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 435
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_85
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 435
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_86
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 437
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_87
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 434
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_88
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 435
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_89
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 436
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_90
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 397
+        width: 144
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_91
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 341
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_92
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 340
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_93
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 341
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_94
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 341
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_95
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 341
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_96
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 341
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_97
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 341
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_98
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 341
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_99
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 341
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_100
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 295
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_101
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 291
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_102
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 299
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_103
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 294
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_104
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 293
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_105
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 292
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_106
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 294
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_107
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 303
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_108
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_109
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 265
+        width: 144
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_110
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 203
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_111
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 203
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_112
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 203
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_113
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 203
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_114
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 203
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_115
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 203
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_116
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 203
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_117
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 203
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_118
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 203
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_119
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 208
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_120
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 212
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_121
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 214
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_122
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 169
+        width: 144
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_123
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 103
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_124
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 103
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_125
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 104
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_126
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 104
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_127
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 104
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_128
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 109
+        width: 12
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_129
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 118
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_130
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 120
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_131
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 122
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_132
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 115
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 18}
+    - name: arrow_133
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 104
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_134
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 72
+        width: 144
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_135
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 11
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_136
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 11
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_137
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 11
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_138
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 11
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_139
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 11
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_140
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 30
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_141
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 11
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_142
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 26
+        width: 49
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 9}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
