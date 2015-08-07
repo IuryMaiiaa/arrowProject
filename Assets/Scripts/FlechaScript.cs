@@ -11,7 +11,7 @@ public class FlechaScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(autoDestruicao && Time.time > 0.3f+tempoInicial) {
+		if(autoDestruicao && Time.time > 0.5f+tempoInicial) {
 			Destroy(this.gameObject);
 		}
 	}
@@ -21,11 +21,16 @@ public class FlechaScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.gameObject.tag == "Player") {
+		if (collision.gameObject.tag == "dragao") {
+			collision.gameObject.GetComponent<DragãoBoss>().flechaDano();
+		} 
+		if (collision.gameObject.tag == "flecha") {
+			
 		} else {
 			autoDestruicao = true;
 			tempoInicial = Time.time;
 		}
+
 	}
 
 }
