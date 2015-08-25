@@ -33,7 +33,8 @@ public class GerenciadorFase : MonoBehaviour {
 		}
 		//Irei rotacionar as fases pela primeira vez, para adicionar uma ao ponto inicial para poder começar o jogo
 		iniciarJogo();
-
+		Player player = (Player)GameObject.FindObjectOfType (typeof(Player));
+		player.gameObject.transform.position = new Vector3 (atual.fim.transform.position.x,player.gameObject.transform.position.y,player.gameObject.transform.position.z);
 
 
 	}

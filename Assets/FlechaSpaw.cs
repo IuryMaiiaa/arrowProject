@@ -13,7 +13,10 @@ public class FlechaSpaw : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter2D(Collision2D collision) {
-			collision.gameObject.GetComponent<Player> ().incrementarFlechas ();
+	void OnTriggerEnter2D(Collider2D coll) {
+		if(coll.gameObject.tag == "Player") {
+			Player player = (Player)GameObject.FindObjectOfType(typeof(Player));
+			player.incrementarFlechas();
+		}
 	}
 }

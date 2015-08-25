@@ -7,7 +7,7 @@ public class ControlerGilhotina : MonoBehaviour, Congelar {
 	public bool congelada;
 	public int speed;
 	public bool subindo;
-	public int tempoCongelado;
+	public float tempoCongelado;
 
 	// Use this for initialization
 	void Start () {
@@ -34,16 +34,13 @@ public class ControlerGilhotina : MonoBehaviour, Congelar {
 			if (this.transform.position.y < bot.position.y) {
 				subindo = true;
 			}
-		} else if(tempoCongelado < 200){
-			tempoCongelado++;
-		} else {
-			tempoCongelado = 0;
+		} else if(Time.time > tempoCongelado + 2f){
 			congelada = false;
 		}
 	}
 
 	public void Congelar() {
-		tempoCongelado = 0;
+		tempoCongelado = Time.time;
 		congelada = true;
 	}
 

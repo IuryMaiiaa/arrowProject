@@ -25,7 +25,6 @@ public class CordaSustenta : MonoBehaviour, Default {
 	void OnCollisionEnter2D(Collision2D collision) {
 		pedra.GetComponent<Collider2D> ().isTrigger = false;
 		pedra.GetComponent<Rigidbody2D> ().gravityScale = 4;
-		Debug.Log ("flacha");
 		if (collision.gameObject.tag == "Flecha") {
 
 		} else {

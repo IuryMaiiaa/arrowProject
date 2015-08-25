@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
-
+	public AudioSource flechaSomSource;
+	public int quantidadeFlechas;
+	public AudioClip flechaSom;
 	public int Speed;
 	public bool pulando;
 	public GameObject Flecha;
@@ -20,9 +22,13 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		flechaSomSource = this.gameObject.GetComponent<AudioSource> ();
+		flechaSomSource.clip = flechaSom;
 		timeUltimoDisparo = Time.time;
 		FlechaEscolhida = Flecha;
-		pontuacao = 500;
+		valorFlecha = 1;
+		quantidadeFlechas = 50;
+		pontuacao = 50;
 		pulando = true;
 		anguloY = 500;
 		anguloX = 1000;
@@ -60,7 +66,8 @@ public class Player : MonoBehaviour {
 		flecha.GetComponent<Transform> ().position = this.transform.position;
 		flecha.GetComponent<Rigidbody2D> ().AddForce (new Vector3(anguloX,anguloY,0));
 		flecha.GetComponent<Collider2D> ().isTrigger = true;
-		pontuacao = pontuacao - valorFlecha;
+		flechaSomSource.Play();
+		quantidadeFlechas = quantidadeFlechas - valorFlecha;
 	}
 
 	public void UpAngulo() {
@@ -115,7 +122,7 @@ public class Player : MonoBehaviour {
 	}
 
 	public void incrementarFlechas () {
-		pontuacao = pontuacao + 10;
+		quantidadeFlechas = quantidadeFlechas + 10;
 	}
 
 	public void incrementarVidas () {

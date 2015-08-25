@@ -2,16 +2,21 @@
 using System.Collections;
 
 public class DragãoBoss : MonoBehaviour, Congelar {
-	public bool bossMorto;
-	public float tempoMorte;
-	public bool subindo;
-	public bool congelado;
+	private bool dragaoMovido;
+	private int ContVidaTorrentFogo;
+	private float tempoInvunerabilidade;
+	private int contVidaFase1;
+	public int contVidaFase2;
+	private bool bossMorto;
+	private float tempoMorte;
+	private bool subindo;
+	private bool congelado;
 	public bool invunerabilidade;
 	public Transform pontobaixo;
 	public Transform pontocima;
 	public Player Player;
 	public bool fragilizado;
-	public float timeIvunerabilidade;
+	private float timeIvunerabilidade;
 	public GameObject bolaDeFogo;
 	private Animator controleAnimacao;
 	private float timeUltimaBolaDeFogo;
@@ -21,6 +26,10 @@ public class DragãoBoss : MonoBehaviour, Congelar {
 
 	// Use this for initialization
 	void Start () {
+		dragaoMovido = false;
+		ContVidaTorrentFogo = 0;
+		contVidaFase1 = 0;
+		contVidaFase2 = 0;
 		bossMorto = false;
 		subindo = true;
 		gerenciaJogo = (GerenciadorJogo)GameObject.FindObjectOfType (typeof(GerenciadorJogo));
@@ -42,13 +51,20 @@ public class DragãoBoss : MonoBehaviour, Congelar {
 			}
 			moverBossFase1();
 		}	else if (fase2) {
-
+			if(contVidaFase2>=3 && !bossMorto) {
+				morte();
+			}
+			moverBossFase2();
 		}
-		if (Time.time > timeIvunerabilidade + 2f) {
+		if (Time.time > timeIvunerabilidade + tempoInvunerabilidade) {
 			invunerabilidade = false;
+			if (fase2 && this.gameObject.GetComponent<Collider2D>().isTrigger) {
+				dragaoDesCongelado();
+				dragaoMovido = false;
+			}
 		}
 
-		if(bossMorto && Time.time>tempoMorte+3f) {
+		if(bossMorto && Time.time>tempoMorte+1.3f) {
 			Destroy(this.gameObject);
 		}
 	}
@@ -67,6 +83,13 @@ public class DragãoBoss : MonoBehaviour, Congelar {
 		}
 	}
 
+	public void moverBossFase2() {
+		if(!dragaoMovido) {
+			this.transform.position = new Vector3(Player.gameObject.transform.position.x+30f,pontocima.position.y,this.transform.position.z);
+			dragaoMovido = true;
+		}
+	}
+
 	public void Congelar() {
 		if (!invunerabilidade) {
 			fragilizado = true;
@@ -81,17 +104,48 @@ public class DragãoBoss : MonoBehaviour, Congelar {
 	public void flechaDano() {
 		if( fase1 && fragilizado ) {
 			fragilizado = false;
-			fase2 = true;
-			fase1 = false;
 			invunerabilidade = true;
+			contVidaFase1++;
 			timeIvunerabilidade = Time.time;
-			controleAnimacao.SetBool("fase1",false);
+			tempoInvunerabilidade = 0.5f;
+			if (contVidaFase1>=4) {
+				timeIvunerabilidade = Time.time;
+				tempoInvunerabilidade = 1f;
+				fase1 = false;
+				fase2 = true;
+				controleAnimacao.SetBool("fase1",false);
+			}
 		} else if ( fase2 && fragilizado ) {
-			morte();
+			fragilizado = false;
+			invunerabilidade = true;
+			ContVidaTorrentFogo++;
+			timeIvunerabilidade = Time.time;
+			tempoInvunerabilidade = 0.1f;
+			if (ContVidaTorrentFogo>=4) {
+				ContVidaTorrentFogo=0;
+				contVidaFase2++;
+				timeIvunerabilidade = Time.time;
+				tempoInvunerabilidade = 2f;
+				dragaoCongelado();
+			}
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D collision) {
+	public void dragaoCongelado() {
+		this.gameObject.GetComponent<Collider2D> ().isTrigger = true;
+		controleAnimacao.SetBool("congelado",true);
+	}
+
+	public void dragaoDesCongelado() {
+		this.gameObject.GetComponent<Collider2D> ().isTrigger = false;
+		controleAnimacao.SetBool("congelado",false);
+	}
+
+	void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.gameObject.tag == "player") {
+			dragaoCongelado();
+			coll.gameObject.GetComponent<Player>().fimJogo();
+		}
 	}
 
 

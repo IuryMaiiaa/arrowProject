@@ -11,7 +11,7 @@ public class FlechaScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(autoDestruicao && Time.time > 0.5f+tempoInicial) {
+		if(autoDestruicao && Time.time > 0.3f+tempoInicial) {
 			Destroy(this.gameObject);
 		}
 	}

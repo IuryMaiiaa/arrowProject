@@ -12,6 +12,6 @@ public class FlechasPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		text.text = "X" + player.pontuacao;
+		text.text = "X" + player.quantidadeFlechas;
 	}
 }

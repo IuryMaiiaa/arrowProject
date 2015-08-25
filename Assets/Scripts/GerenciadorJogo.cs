@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GerenciadorJogo : MonoBehaviour {
 	public GerenciadorFase faseManager;
+	public AudioManager audioController;
 	public bool existeboss;
 	public GameObject BossDragao;
 	public GameObject BossInstanciado;
@@ -11,6 +12,7 @@ public class GerenciadorJogo : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		audioController = (AudioManager)GameObject.FindObjectOfType (typeof(AudioManager));
 		BossInstanciado = null;
 		existeboss = false;
 		faseManager = (GerenciadorFase)FindObjectOfType(typeof(GerenciadorFase));
@@ -46,14 +48,24 @@ public class GerenciadorJogo : MonoBehaviour {
 	}
 
 	public void reiniciar() {
+		tirandoSlowTime ();
 		Application.LoadLevel(0);
 	}
 
 	public void emitirAlerta() {
+		audioController.TocarMusicaBoss ();
 		Debug.Log("WARNING WARNING WARNING WARNING");
 	}
 
+	public void tirandoSlowTime() {
+		if(Time.timeScale == 0.3F) {
+			Time.timeScale = 1.0F;
+		}
+		Time.fixedDeltaTime = 0.02F * Time.timeScale;
+	}
+
 	public void bossMorto() {
+		audioController.TocarMusicaNormal ();
 		existeboss = false;
 		bossInvocado = false;
 	}
