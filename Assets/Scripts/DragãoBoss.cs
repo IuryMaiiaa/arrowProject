@@ -85,7 +85,7 @@ public class DragãoBoss : MonoBehaviour, Congelar {
 
 	public void moverBossFase2() {
 		if(!dragaoMovido) {
-			this.transform.position = new Vector3(Player.gameObject.transform.position.x+30f,pontocima.position.y,this.transform.position.z);
+			this.transform.position = new Vector3(Player.gameObject.transform.position.x+30f,pontocima.position.y-0.5f,this.transform.position.z);
 			dragaoMovido = true;
 		}
 	}
@@ -142,9 +142,12 @@ public class DragãoBoss : MonoBehaviour, Congelar {
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.tag == "player") {
+		if (coll.gameObject.tag == "Player") {
 			dragaoCongelado();
 			coll.gameObject.GetComponent<Player>().fimJogo();
+		}
+		if (coll.gameObject.tag == "terreno") {
+			morte();
 		}
 	}
 

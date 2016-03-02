@@ -8,15 +8,18 @@ public class GerenciadorJogo : MonoBehaviour {
 	public GameObject BossDragao;
 	public GameObject BossInstanciado;
 	public bool bossInvocado;
+	public GerenciaMenu GM;
 
 
 	// Use this for initialization
 	void Start () {
+		GM = (GerenciaMenu)GameObject.FindObjectOfType (typeof(GerenciaMenu));
 		audioController = (AudioManager)GameObject.FindObjectOfType (typeof(AudioManager));
 		BossInstanciado = null;
 		existeboss = false;
 		faseManager = (GerenciadorFase)FindObjectOfType(typeof(GerenciadorFase));
 		bossInvocado = false;
+		atualizarAudio ();
 	}
 	
 	// Update is called once per frame
@@ -49,7 +52,7 @@ public class GerenciadorJogo : MonoBehaviour {
 
 	public void reiniciar() {
 		tirandoSlowTime ();
-		Application.LoadLevel(0);
+		Application.LoadLevel(1);
 	}
 
 	public void emitirAlerta() {
@@ -62,6 +65,13 @@ public class GerenciadorJogo : MonoBehaviour {
 			Time.timeScale = 1.0F;
 		}
 		Time.fixedDeltaTime = 0.02F * Time.timeScale;
+	}
+
+	public void atualizarAudio() {
+		AudioSource[] audios = (AudioSource[])GameObject.FindObjectsOfType (typeof(AudioSource));
+		foreach (AudioSource audio in audios) {
+			audio.volume = GM.value;
+		}
 	}
 
 	public void bossMorto() {

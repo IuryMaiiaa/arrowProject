@@ -2,32 +2,43 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
-	public AudioSource flechaSomSource;
-	public int quantidadeFlechas;
+    //constantes
+    private static int MAXANGULOY=1000;
+    private static int MINANGULOY=100;
+
+    //variaveis do codigo
+    public float minSwipeDistY;
+    public float minSwipeDistX;
+    private Vector2 startPos;
+    public int Speed;
+    public bool pulando;
+    private float anguloY;
+    private float anguloX;
+    private float forcaPulo;
+    private int valorFlecha;
+    public int pontuacao;
+    public int vida;
+    public float timeUltimoDisparo;
+    private Touch touch;
+    private Ray ray;
+
+    //objetos externos
+    public AudioSource flechaSomSource;
 	public AudioClip flechaSom;
-	public int Speed;
-	public bool pulando;
 	public GameObject Flecha;
 	public GameObject FlechaGelo;
 	public GameObject FlechaFogo;
-	private float anguloY;
-	private float anguloX;
-	private float forcaPulo;
-	private int valorFlecha;
-	public int pontuacao;
 	public GameObject FlechaEscolhida;
-	public int vida;
 	public GameObject prefPreviaTragetoria;
-	public float timeUltimoDisparo;
+    public DebugAndroid debug;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		flechaSomSource = this.gameObject.GetComponent<AudioSource> ();
 		flechaSomSource.clip = flechaSom;
 		timeUltimoDisparo = Time.time;
 		FlechaEscolhida = Flecha;
 		valorFlecha = 1;
-		quantidadeFlechas = 50;
 		pontuacao = 50;
 		pulando = true;
 		anguloY = 500;
@@ -38,7 +49,11 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate (Vector2.right * Speed * Time.deltaTime);
+
+        float swipeDistVertical;
+
+
+        transform.Translate (Vector2.right * Speed * Time.deltaTime);
 		if (vida == 0 ) {
 			fimJogo();
 		}
@@ -46,7 +61,103 @@ public class Player : MonoBehaviour {
 			atkPrevia();
 			timeUltimoDisparo = Time.time;
 		}
-	}
+        string auxDeb = "";
+
+        for (int i = 0; i < Input.touches.Length; i++)
+        {
+            
+            touch = Input.touches[i];
+            switch (touch.phase)
+            {
+                case TouchPhase.Began:
+                    startPos = touch.position;
+                    break;
+
+                case TouchPhase.Moved:
+                    swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
+
+                    if (swipeDistVertical > minSwipeDistY)
+
+                    {
+
+                        float swipeValue = Mathf.Sign(touch.position.y - startPos.y);
+
+                        if (swipeValue > 0)
+                        {
+                            UpAngulo();
+                        }//up swipe
+
+                        //Jump ();
+
+                        else if (swipeValue < 0)
+                        {
+                            DonwAngulo();
+                        }//down swipe
+
+                        //Shrink ();
+
+                    }
+                    break;
+                
+                case TouchPhase.Ended:
+                    swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
+
+                    if (swipeDistVertical > minSwipeDistY)
+
+                    {
+
+                        float swipeValue = Mathf.Sign(touch.position.y - startPos.y);
+
+                        if (swipeValue > 0)
+                        {
+                            UpAngulo();
+                        }//up swipe
+
+                        //Jump ();
+
+                        else if (swipeValue < 0)
+                        {
+                            DonwAngulo();
+                        }//down swipe
+
+                            //Shrink ();
+
+                    } else
+                    {
+                        float swipeDistHorizontal = (new Vector3(touch.position.x, 0, 0) - new Vector3(startPos.x, 0, 0)).magnitude;
+
+                        if (swipeDistHorizontal > minSwipeDistX)
+
+                        {
+
+                            float swipeValue = Mathf.Sign(touch.position.x - startPos.x);
+
+                            if (swipeValue > 0)
+                            {
+                            }//right swipe
+
+                            //MoveRight ();
+
+                            else if (swipeValue < 0)
+                            {
+                            }//left swipe
+
+                            //MoveLeft ();
+
+                        } else
+                        {
+                            jump();
+                        }
+                    }
+
+                    
+                    break;
+            }
+
+            debug.log(auxDeb + " " + Input.touches.Length);
+        }
+        
+    }
 
 	public void jump() {
 		if (!pulando) {
@@ -67,15 +178,23 @@ public class Player : MonoBehaviour {
 		flecha.GetComponent<Rigidbody2D> ().AddForce (new Vector3(anguloX,anguloY,0));
 		flecha.GetComponent<Collider2D> ().isTrigger = true;
 		flechaSomSource.Play();
-		quantidadeFlechas = quantidadeFlechas - valorFlecha;
 	}
 
 	public void UpAngulo() {
-		anguloY += 100;
+        if (anguloY < MAXANGULOY)
+        {
+            anguloY += 50;
+        }
+		
 	}
 
 	public void DonwAngulo() {
-		anguloY -= 100;
+        if (anguloY > MINANGULOY)
+        {
+            anguloY -= 50;
+        }
+
+		
 	}
 
 	public void SlowTime() {
@@ -119,10 +238,6 @@ public class Player : MonoBehaviour {
 
 	public void receberDano() {
 		vida = vida - 1;
-	}
-
-	public void incrementarFlechas () {
-		quantidadeFlechas = quantidadeFlechas + 10;
 	}
 
 	public void incrementarVidas () {

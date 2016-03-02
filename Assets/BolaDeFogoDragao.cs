@@ -25,5 +25,8 @@ public class BolaDeFogoDragao : MonoBehaviour, Congelar {
 			collision.gameObject.GetComponent<Player>().receberDano();
 			Destroy(this.gameObject);
 		}
+		if (collision.gameObject.tag == "terreno") {
+			Destroy(this.gameObject);
+		}
 	}
 }
