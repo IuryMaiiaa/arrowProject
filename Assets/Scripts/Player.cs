@@ -48,10 +48,8 @@ public class Player : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
-        float swipeDistVertical;
-
+	void Update ()
+    {   
 
         transform.Translate (Vector2.right * Speed * Time.deltaTime);
 		if (vida == 0 ) {
@@ -61,11 +59,18 @@ public class Player : MonoBehaviour {
 			atkPrevia();
 			timeUltimoDisparo = Time.time;
 		}
-        string auxDeb = "";
 
+        
+        
+    }
+
+    void FixedUpdate()
+    {
+        debug.log("" + anguloY);
+        float swipeDistVertical;
         for (int i = 0; i < Input.touches.Length; i++)
         {
-            
+
             touch = Input.touches[i];
             switch (touch.phase)
             {
@@ -98,7 +103,7 @@ public class Player : MonoBehaviour {
 
                     }
                     break;
-                
+
                 case TouchPhase.Ended:
                     swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
 
@@ -120,9 +125,10 @@ public class Player : MonoBehaviour {
                             DonwAngulo();
                         }//down swipe
 
-                            //Shrink ();
+                        //Shrink ();
 
-                    } else
+                    }
+                    else
                     {
                         float swipeDistHorizontal = (new Vector3(touch.position.x, 0, 0) - new Vector3(startPos.x, 0, 0)).magnitude;
 
@@ -144,19 +150,18 @@ public class Player : MonoBehaviour {
 
                             //MoveLeft ();
 
-                        } else
+                        }
+                        else
                         {
                             jump();
                         }
                     }
 
-                    
+
                     break;
             }
 
-            debug.log(auxDeb + " " + Input.touches.Length);
         }
-        
     }
 
 	public void jump() {
@@ -183,7 +188,7 @@ public class Player : MonoBehaviour {
 	public void UpAngulo() {
         if (anguloY < MAXANGULOY)
         {
-            anguloY += 50;
+            anguloY += 15;
         }
 		
 	}
@@ -191,7 +196,7 @@ public class Player : MonoBehaviour {
 	public void DonwAngulo() {
         if (anguloY > MINANGULOY)
         {
-            anguloY -= 50;
+            anguloY -= 15;
         }
 
 		
