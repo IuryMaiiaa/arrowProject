@@ -70,96 +70,109 @@ public class Player : MonoBehaviour {
         float swipeDistVertical;
         for (int i = 0; i < Input.touches.Length; i++)
         {
-
             touch = Input.touches[i];
-            switch (touch.phase)
+            ray = Camera.main.ScreenPointToRay(Input.touches[i].position);
+            Vector3 aux = ray.origin;
+            aux.z = 0;
+            ray.origin = aux;
+            RaycastHit hit = new RaycastHit();
+
+            if (Physics.Raycast(ray, out hit, 500) && hit.collider.gameObject.tag == "botoes")
             {
-                case TouchPhase.Began:
-                    startPos = touch.position;
-                    break;
 
-                case TouchPhase.Moved:
-                    swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
+            } else
+            {
+                switch (touch.phase)
+                {
+                    case TouchPhase.Began:
+                        startPos = touch.position;
+                        break;
 
-                    if (swipeDistVertical > minSwipeDistY)
+                    case TouchPhase.Moved:
+                        swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
 
-                    {
-
-                        float swipeValue = Mathf.Sign(touch.position.y - startPos.y);
-
-                        if (swipeValue > 0)
-                        {
-                            UpAngulo();
-                        }//up swipe
-
-                        //Jump ();
-
-                        else if (swipeValue < 0)
-                        {
-                            DonwAngulo();
-                        }//down swipe
-
-                        //Shrink ();
-
-                    }
-                    break;
-
-                case TouchPhase.Ended:
-                    swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
-
-                    if (swipeDistVertical > minSwipeDistY)
-
-                    {
-
-                        float swipeValue = Mathf.Sign(touch.position.y - startPos.y);
-
-                        if (swipeValue > 0)
-                        {
-                            UpAngulo();
-                        }//up swipe
-
-                        //Jump ();
-
-                        else if (swipeValue < 0)
-                        {
-                            DonwAngulo();
-                        }//down swipe
-
-                        //Shrink ();
-
-                    }
-                    else
-                    {
-                        float swipeDistHorizontal = (new Vector3(touch.position.x, 0, 0) - new Vector3(startPos.x, 0, 0)).magnitude;
-
-                        if (swipeDistHorizontal > minSwipeDistX)
+                        if (swipeDistVertical > minSwipeDistY)
 
                         {
 
-                            float swipeValue = Mathf.Sign(touch.position.x - startPos.x);
+                            float swipeValue = Mathf.Sign(touch.position.y - startPos.y);
 
                             if (swipeValue > 0)
                             {
-                            }//right swipe
+                                UpAngulo();
+                            }//up swipe
 
-                            //MoveRight ();
+                            //Jump ();
 
                             else if (swipeValue < 0)
                             {
-                            }//left swipe
+                                DonwAngulo();
+                            }//down swipe
 
-                            //MoveLeft ();
+                            //Shrink ();
+
+                        }
+                        break;
+
+                    case TouchPhase.Ended:
+                        swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
+
+                        if (swipeDistVertical > minSwipeDistY)
+
+                        {
+
+                            float swipeValue = Mathf.Sign(touch.position.y - startPos.y);
+
+                            if (swipeValue > 0)
+                            {
+                                UpAngulo();
+                            }//up swipe
+
+                            //Jump ();
+
+                            else if (swipeValue < 0)
+                            {
+                                DonwAngulo();
+                            }//down swipe
+
+                            //Shrink ();
 
                         }
                         else
                         {
-                            jump();
+                            float swipeDistHorizontal = (new Vector3(touch.position.x, 0, 0) - new Vector3(startPos.x, 0, 0)).magnitude;
+
+                            if (swipeDistHorizontal > minSwipeDistX)
+
+                            {
+
+                                float swipeValue = Mathf.Sign(touch.position.x - startPos.x);
+
+                                if (swipeValue > 0)
+                                {
+                                }//right swipe
+
+                                //MoveRight ();
+
+                                else if (swipeValue < 0)
+                                {
+                                }//left swipe
+
+                                //MoveLeft ();
+
+                            }
+                            else
+                            {
+                                jump();
+                            }
                         }
-                    }
 
 
-                    break;
+                        break;
+                }
             }
+            
+            
 
         }
     }
