@@ -82,6 +82,7 @@ public class Player : MonoBehaviour {
 
             } else
             {
+                //D: meu save do dark souls quebro hoje muito triste
                 switch (touch.phase)
                 {
                     case TouchPhase.Began:
