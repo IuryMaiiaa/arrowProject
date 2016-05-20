@@ -16,6 +16,7 @@ public class GerenciaMenu : MonoBehaviour {
 
 	public void audioGame(float volume) {
 		value = volume;
+        //commit meia noite
 	}
 
 	public void playGame() {
